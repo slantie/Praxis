@@ -7,6 +7,7 @@ module.exports = {
   presets: [require('nativewind/preset')],
   theme: {
     extend: {
+      // --- THEME.TS COLORS (via CSS variables) ---
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -42,11 +43,47 @@ module.exports = {
           foreground: 'hsl(var(--card-foreground))',
         },
       },
+      // --- THEME.TS BORDER RADIUS ---
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        sm: '4px',
+        md: '6px',
+        lg: '8px',
+        xl: '12px',
+        '2xl': '16px',
+        full: '9999px',
       },
+      // --- THEME.TS TYPOGRAPHY ---
+      fontSize: {
+        xs: '12px',
+        sm: '14px',
+        base: '16px',
+        lg: '18px',
+        xl: '20px',
+        '2xl': '24px',
+        '3xl': '30px',
+        '4xl': '36px',
+      },
+      fontWeight: {
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+      },
+      lineHeight: {
+        tight: '1.25',
+        normal: '1.5',
+        relaxed: '1.625',
+      },
+      // --- THEME.TS SPACING ---
+      spacing: {
+        xs: '4px',
+        sm: '8px',
+        md: '16px',
+        lg: '24px',
+        xl: '32px',
+        '2xl': '48px',
+      },
+      // --- EXISTING CONFIGURATION ---
       borderWidth: {
         hairline: hairlineWidth(),
       },

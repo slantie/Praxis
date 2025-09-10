@@ -73,7 +73,7 @@ export function ChatInput({
   const canSend = message.trim().length > 0 && !disabled && characterCount <= maxLength;
 
   return (
-    <View className="border-t border-border bg-background px-4 py-3">
+    <View className="border-t border-border bg-background px-4 py-3 mb-6">
       {/* Character count warning */}
       {isNearLimit && (
         <View className="mb-2">

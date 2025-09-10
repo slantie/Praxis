@@ -22,7 +22,7 @@ export default function RootLayout() {
         <Stack.Screen
           name="index"
           options={{
-            title: 'Praxis AI',
+            title: 'PraxisAI',
             headerShown: true,
           }}
         />

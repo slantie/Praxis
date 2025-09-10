@@ -1,5 +1,5 @@
 import { View, ScrollView, Image } from 'react-native';
-import { router } from 'expo-router';
+import { Route, router } from 'expo-router';
 import { Button } from '@/components/ui/button';
 import { Text } from '@/components/ui/text';
 import { Icon } from '@/components/ui/icon';
@@ -18,11 +18,11 @@ export default function HomeScreen() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
 
   const startNewChat = () => {
-    router.push('/chat');
+    router.push('/(chat)/new' as Route);
   };
 
   const goToTestPage = () => {
-    router.push('/test');
+    router.push('/test' as Route);
   };
 
   return (
